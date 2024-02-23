@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS III</title>
+    <link rel="stylesheet" href="/week_3/day_1/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Flexbox</h1>
+      <p>los hijos se ajustan segun el elemento padre</p>
+    </header>
+    <main>
+      <div class="separador"></div>
+      <section>
+        <h2>propiedades del Flexbox</h2>
+        <p>
+          <strong>Flex direction:row;</strong> Esta propiedad nos va permitir
+          especificar si queremos que los flex items se dispongan en filas o
+          columnas
+          <br />
+          <strong>flex direction: column;</strong> con el valor comlumn los flex
+          items se apilan en una columna de arriba hacia abajo
+        </p>
+        <div class="container-img">
+          <img src="/week_3/day_1/img/flex.png" alt="" />
+        </div>
+        <p>
+          <strong>flex wrap</strong> el comportamiento inicial del contenedor
+          flexible es poder <b>mantener</b> los flex items en su eje sin
+          importar que las dimensiones de estos cambien.
+          <br />
+          con flex wrap vamos a poder especificar si queremos que los items
+          puedan saltar a una nueva linea si el contenedor flexible se queda sin
+          espacio
+        </p>
+        <div class="container-img">
+          <img src="/week_3/day_1/img/wrap.png" alt="#" />
+        </div>
+        <p>
+          <strong>justigy-contend :</strong> se utiliza para centrar o colocar
+          tanto izquierda como a la derecha el contenido
+        </p>
+        <div class="container-img">
+          <img src="/week_3/day_1/img/justyfi.png" alt="#" srcset="" />
+        </div>
+        <p>
+          el justify tambien tiene otra caracteristica que es el espaciado que
+          permite darle diferentes formas a la estructura
+        </p>
+        <div class="container-img">
+          <img src="/week_3/day_1/img/content.png" alt="" />
+        </div>
+      </section>
+      <div class="separador"></div>
+
+      <section>
+        <h2>Flex direction</h2>
+        <p>row esta por defecto siempre activado</p>
+        <div class="container row">
+          <div class="caja-flex">
+            <p>1</p>
+          </div>
+          <div class="caja-flex">
+            <p>2</p>
+          </div>
+          <div class="caja-flex">
+            <p>3</p>
+          </div>
+        </div>
+        <p>row-reverse</p>
+        <div class="container reverse">
+          <div class="caja-flex">
+            <p>1</p>
+          </div>
+          <div class="caja-flex">
+            <p>2</p>
+          </div>
+          <div class="caja-flex">
+            <p>3</p>
+          </div>
+        </div>
+        <p>column</p>
+        <div class="container column">
+          <div class="caja-flex">
+            <p>1</p>
+          </div>
+          <div class="caja-flex">
+            <p>2</p>
+          </div>
+          <div class="caja-flex">
+            <p>3</p>
+          </div>
+        </div>
+        <p>column-reverse</p>
+        <div class="container column-reverse">
+          <div class="caja-flex">
+            <p>1</p>
+          </div>
+          <div class="caja-flex">
+            <p>2</p>
+          </div>
+          <div class="caja-flex">
+            <p>3</p>
+          </div>
+        </div>
+      </section>
+      <div class="separador"></div>
+      <section>
+        <h2>Flex gap ✨</h2>
+        <p>
+          gap: con esta funcion super util colocamos el mismo espacio para
+          separar cada caja entre si se debe colocar al elemento padre
+        </p>
+        <div class="container gap">
+          <div class="caja-flex">
+            <p>1</p>
+          </div>
+          <div class="caja-flex">
+            <p>2</p>
+          </div>
+          <div class="caja-flex">
+            <p>3</p>
+          </div>
+        </div>
+      </section>
+      <div class="separador"></div>
+      <section>
+        <h2>Flex wrap</h2>
+        <p>
+          wrap:se adapta al tamaño de caja que va teniendo si achico mas el
+          contenedor se va posicionar cada cuadradito uno abajo del otro
+        </p>
+        <div class="container wrap">
+          <div class="caja-flex">
+            <p>1</p>
+          </div>
+          <div class="caja-flex">
+            <p>2</p>
+          </div>
+          <div class="caja-flex">
+            <p>3</p>
+          </div>
+          <div class="caja-flex">
+            <p>3</p>
+          </div>
+          <div class="caja-flex">
+            <p>3</p>
+          </div>
+        </div>
+        <p>no-wrap</p>
+        <p>
+          se va haciendo mas y mas pequeña cada caja y adaptando a ese pequelo
+          espacio que le quedo
+        </p>
+        <div class="container no-wrap">
+          <div class="caja-flex">
+            <p>1</p>
+          </div>
+          <div class="caja-flex">
+            <p>2</p>
+          </div>
+          <div class="caja-flex">
+            <p>3</p>
+          </div>
+        </div>
+      </section>
+      <div class="separador"></div>
+      <section>
+        <h2>flex flow</h2>
+        <p>te ahorras de escribir 2 lineas la flex-direction y la flex-wrap</p>
+        <div class="container flow">
+          <div class="caja-flex">
+            <p>1</p>
+          </div>
+          <div class="caja-flex">
+            <p>2</p>
+          </div>
+          <div class="caja-flex">
+            <p>3</p>
+          </div>
+        </div>
+      </section>
+      <div class="separador"></div>
+      <section>
+        <h2>justify contend</h2>
+        <p>esto se utiliza para acomodar el texto a donde queremos</p>
+        <p>flex-start: este es el comportamiento por defecto del contenido</p>
+        <div class="container jc-stark">
+          <div class="caja-flex">
+            <p>1</p>
+          </div>
+          <div class="caja-flex">
+            <p>2</p>
+          </div>
+          <div class="caja-flex">
+            <p>3</p>
+          </div>
+        </div>
+        <p>flex-end: acomoda el texto al final</p>
+        <div class="container flex-end">
+          <div class="caja-flex">
+            <p>1</p>
+          </div>
+          <div class="caja-flex">
+            <p>2</p>
+          </div>
+          <div class="caja-flex">
+            <p>3</p>
+          </div>
+        </div>
+        <p>flex-center: centra el texto</p>
+        <div class="container center">
+          <div class="caja-flex">
+            <p>1</p>
+          </div>
+          <div class="caja-flex">
+            <p>2</p>
+          </div>
+          <div class="caja-flex">
+            <p>3</p>
+          </div>
+        </div>
+        <p>space between:</p>
+        <div class="container between">
+          <div class="caja-flex">
+            <p>1</p>
+          </div>
+          <div class="caja-flex">
+            <p>2</p>
+          </div>
+          <div class="caja-flex">
+            <p>3</p>
+          </div>
+        </div>
+        <div class="container between">
+          <div class="caja-flex">
+            <p>1</p>
+          </div>
+          <div class="caja-flex">
+            <p>3</p>
+          </div>
+        </div>
+        <p>space around:</p>
+        <div class="container around">
+          <div class="caja-flex">
+            <p>1</p>
+          </div>
+          <div class="caja-flex">
+            <p>2</p>
+          </div>
+          <div class="caja-flex">
+            <p>3</p>
+          </div>
+        </div>
+        <p>space evenly:</p>
+        <div class="container evenly">
+          <div class="caja-flex">
+            <p>1</p>
+          </div>
+          <div class="caja-flex">
+            <p>2</p>
+          </div>
+          <div class="caja-flex">
+            <p>3</p>
+          </div>
+        </div>
+      </section>
+      <div class="separador"></div>
+      <section>
+        <h2>align-itenms</h2>
+        <p>align-content trabaja en el eje y</p>
+        <p>flex start: este es el comportamiento por defecto</p>
+        <div class="column-container start">
+          <div class="caja-flex">
+            <p>1</p>
+          </div>
+          <div class="caja-flex">
+            <p>2</p>
+          </div>
+          <div class="caja-flex">
+            <p>3</p>
+          </div>
+        </div>
+        <p>flex-end: coloca el elemento al final del eje y</p>
+        <div class="column-container end">
+          <div class="caja-flex">
+            <p>1</p>
+          </div>
+          <div class="caja-flex">
+            <p>2</p>
+          </div>
+          <div class="caja-flex">
+            <p>3</p>
+          </div>
+        </div>
+        <p>center: coloca el elemento en el centro del eje y</p>
+        <div class="column-container center-alig">
+          <div class="caja-flex">
+            <p>1</p>
+          </div>
+          <div class="caja-flex">
+            <p>2</p>
+          </div>
+          <div class="caja-flex">
+            <p>3</p>
+          </div>
+        </div>
+        <p>stretch:</p>
+        <div class="column-container-stretch align-stretch">
+          <div class="caja-flex-nueva">
+            <p>1</p>
+          </div>
+          <div class="caja-flex-nueva">
+            <p>2</p>
+          </div>
+          <div class="caja-flex-nueva">
+            <p>3</p>
+          </div>
+        </div>
+        <p>baseline:</p>
+        <div class="column-container align-baseline">
+          <div class="caja-flex-baseline baseline-1">
+            <p>1</p>
+          </div>
+          <div class="caja-flex-baseline baseline-2">
+            <p>2</p>
+          </div>
+          <div class="caja-flex-baseline baseline-3">
+            <p>3</p>
+          </div>
+        </div>
+      </section>
+      <div class="separador"></div>
+      <section>
+        <h2>align-content</h2>
+        <p>flex-start:</p>
+        <div class="ac-container ac-stark">
+          <div class="caja-flex">
+            <p>1</p>
+          </div>
+          <div class="caja-flex">
+            <p>2</p>
+          </div>
+          <div class="caja-flex">
+            <p>3</p>
+          </div>
+        </div>
+        <p>flex-end:</p>
+        <div class="ac-container ac-end">
+          <div class="caja-flex">
+            <p>1</p>
+          </div>
+          <div class="caja-flex">
+            <p>2</p>
+          </div>
+          <div class="caja-flex">
+            <p>3</p>
+          </div>
+        </div>
+
+        <p>flex-center:</p>
+        <div class="ac-container ac-center">
+          <div class="caja-flex">
+            <p>1</p>
+          </div>
+          <div class="caja-flex">
+            <p>2</p>
+          </div>
+          <div class="caja-flex">
+            <p>3</p>
+          </div>
+        </div>
+        <p>flex-between:</p>
+        <div class="ac-container ac-between">
+          <div class="caja-flex">
+            <p>1</p>
+          </div>
+          <div class="caja-flex">
+            <p>2</p>
+          </div>
+          <div class="caja-flex">
+            <p>3</p>
+          </div>
+        </div>
+
+        <p>flex-around:</p>
+        <div class="ac-container ac-around">
+          <div class="caja-flex">
+            <p>1</p>
+          </div>
+          <div class="caja-flex">
+            <p>2</p>
+          </div>
+          <div class="caja-flex">
+            <p>3</p>
+          </div>
+        </div>
+
+        <p>flex-stretch:</p>
+        <div class="ac-container ac-stretch">
+          <div class="caja-flex caja-stretch">
+            <p>1</p>
+          </div>
+          <div class="caja-flex caja-stretch">
+            <p>2</p>
+          </div>
+          <div class="caja-flex caja-stretch">
+            <p>3</p>
+          </div>
+        </div>
+      </section>
+      <div class="separador"></div>
+      <section>
+        <h2>propiedades para los hijos</h2>
+        <p>order</p>
+        <div class="container flex">
+          <div class="caja-flex order1">
+            <p>1</p>
+          </div>
+          <div class="caja-flex order2">
+            <p>2</p>
+          </div>
+          <div class="caja-flex order3">
+            <p>3</p>
+          </div>
+        </div>
+        <p>flex grow</p>
+        <div class="container flex">
+          <div class="caja-flex grow1">
+            <p>1</p>
+          </div>
+          <div class="caja-flex grow2">
+            <p>2</p>
+          </div>
+          <div class="caja-flex grow3">
+            <p>3</p>
+          </div>
+        </div>
+        <p>flex shrink</p>
+        <div class="container flex contenedor-shrink">
+          <div class="caja-flex shrink-1">
+            <p>1</p>
+          </div>
+          <div class="caja-flex shrink-2">
+            <p>2</p>
+          </div>
+          <div class="caja-flex shrink-3">
+            <p>3</p>
+          </div>
+        </div>
+        <p>flex basis : sirve para darle el tamaño desde el hijo</p>
+        <div class="container flex">
+          <div class="caja-flex basis1">
+            <p>1</p>
+          </div>
+          <div class="caja-flex basis2">
+            <p>2</p>
+          </div>
+          <div class="caja-flex basis3">
+            <p>3</p>
+          </div>
+        </div>
+        <p>flex basis : sirve para darle el tamaño desde el hijo</p>
+        <div class="container flex self">
+          <div class="caja-flex self-1">
+            <p>1</p>
+          </div>
+          <div class="caja-flex self-2">
+            <p>2</p>
+          </div>
+          <div class="caja-flex self-3">
+            <p>3</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
