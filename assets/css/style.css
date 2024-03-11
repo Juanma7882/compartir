@@ -1,0 +1,428 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  /* colours  */
+  --background: rgb(4, 4, 12); /* background-color */
+  --primary: rgb(67, 76, 203);
+  --secondary: #1e232c;
+  --btn-lg: #050d26;
+  --bg-azul-10: #e9eeff;
+  --bg-white: #fff;
+  --bg-electric: #f0fbff;
+  --nav-bg: #0f1525;
+
+  /* text colours  */
+  --text-gray: #adb9c7;
+  --text-white: #f3f4f6;
+
+  /* decoration  */
+  --fire: #ff6d00;
+  --electric: #64d3ff;
+}
+* {
+  padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  color: var(--text-white);
+  list-style: none;
+  font-family: "Poppins";
+  /* border: 1px solid red; */
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* ============  header  ============ */
+header {
+  top: 0;
+  height: 65px;
+  width: 100%;
+  background-color: var(--secondary);
+  display: flex;
+  position: fixed;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 0 30px;
+}
+.navbar {
+  gap: 50px;
+}
+.navbar > ul > li {
+  color: var(--text-gray);
+  font-weight: 400;
+  cursor: pointer;
+}
+ul > li.home {
+  font-weight: 800;
+  color: var(--text-white);
+}
+.logo {
+  height: 50px;
+}
+.carrito {
+  height: 50px;
+  cursor: pointer;
+}
+.navbar-text {
+  gap: 15px;
+}
+
+/* ============  main  ============ */
+main {
+  background-color: var(--background);
+  flex-direction: column;
+}
+/* ============  desubre  ============ */
+
+section {
+  display: flex;
+  align-items: start;
+  margin-top: 110px;
+  max-width: 800px;
+}
+.discover {
+  gap: 75px;
+}
+.discover-text {
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+.Bitcoin {
+  width: 220px;
+  border-radius: 10px;
+}
+.send {
+  background-color: var(--primary);
+  padding: 10px 20px;
+  border-radius: 1rem;
+  font-weight: 600;
+}
+.discover-parrafo {
+  color: var(--text-gray);
+  font-size: 14px;
+}
+.BITCOINS {
+  font-weight: 800;
+}
+/* <!-- targeta discover --> */
+.dicover-card {
+  background-color: var(--secondary);
+  padding: 20px;
+  border-radius: 1rem;
+}
+.discover-text > h1 {
+  font-size: 30px;
+}
+.dicover-text-card {
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 10px;
+}
+.dicover-card-top {
+  gap: 10px;
+  text-align: center;
+}
+.dicover-card-body {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.dicover-card-right {
+  gap: 10px;
+}
+.title-h3 {
+  font-size: medium;
+  font-weight: 600;
+}
+.parrafo_small {
+  color: var(--text-gray);
+  font-size: small;
+}
+
+/* ==========   aprende =================== */
+.aprender {
+  flex-direction: column;
+  gap: 60px;
+}
+.aprender-box-cards {
+  gap: 20px;
+}
+.aprender-cards {
+  flex-direction: column;
+  background-color: var(--secondary);
+  width: 250px;
+  padding: 30px;
+  gap: 10px;
+  text-align: center;
+  border-radius: 1rem;
+}
+.aprender-cards-title-title {
+  font-weight: 00;
+  font-size: 800;
+}
+.dogue {
+  height: 60px;
+}
+/* ============= info ===================== */
+.info {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+  gap: 20px;
+}
+
+.ete {
+  width: 300px;
+}
+.info-container {
+  max-width: 900px;
+  gap: 20px;
+  display: flex;
+}
+.info-container-title {
+  font-size: xx-large;
+  width: 100%;
+}
+.info-text-top {
+  align-items: center;
+  justify-content: center;
+}
+
+.text-container-info p {
+  color: var(--text-gray);
+}
+.empezamos-ahora {
+  top: 20px;
+  font-weight: 800;
+  font-size: large;
+}
+.text-container-info {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+.imagenes {
+  gap: 20px;
+  margin: 10px;
+}
+
+/* ======= btc ============= */
+.btc {
+  max-width: 1200px;
+  margin-bottom: 100px;
+}
+
+.btc-top {
+  flex-direction: column;
+  gap: 40px;
+  display: flex;
+  align-items: center;
+}
+.ttitle-nft {
+  font-size: 30px;
+}
+.btc-buttons {
+  gap: 20px;
+}
+.btc-btn {
+  color: var(--text-white);
+  background-color: var(--btn-lg);
+  padding: 10px 20px;
+  border-radius: 20px;
+}
+.btc-card {
+  display: flex;
+  /* align-items: center; */
+  flex-direction: column;
+  background-color: var(--secondary);
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 100%;
+  gap: 20px;
+}
+.btc-card-top {
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.btc-card-center {
+  justify-content: space-between;
+}
+.btc-card-button {
+  justify-content: space-between;
+}
+.btc-card-center-left {
+  gap: 15px;
+}
+.btc-btn {
+  border: none;
+}
+.gris {
+  color: var(--text-gray);
+}
+.btc-card-center-left > p {
+  font-weight: 700;
+}
+.container-cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.vermas {
+  background-color: transparent;
+  padding: 20px 40px;
+  border-radius: 20px;
+  border-color: var(--electric);
+}
+footer {
+  background-color: var(--background);
+  padding: 60px;
+  gap: 40px;
+  flex-direction: column;
+  color: var(--btn-lg);
+}
+.navbar-footer {
+  gap: 30px;
+  color: var(--text-gray);
+}
+.navbar-footer > li {
+  color: var(--text-gray);
+}
+.menu-amburguesa {
+  display: none;
+}
+#menu-toggle,
+#cart-toggle {
+  display: none;
+}
+.carrito-card {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: 0;
+  top: 65px;
+  background-color: rgb(40, 30, 71);
+  padding: 20px;
+  height: calc(100vh - 65px);
+  overflow-y: scroll;
+  display: none;
+  gap: 12px;
+}
+#cart-toggle:checked + .carrito-card {
+  display: flex;
+}
+.carrito-card::-webkit-scrollbar {
+  width: 0; /* Ancho del scrollbar a 0 */
+}
+.compras-del-carrito {
+  background-color: var(--btn-lg);
+  border-radius: 15px;
+}
+.carrito-texto-del-carrito {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  gap: 20px;
+  font-weight: 300;
+}
+.carrito-cantidad-productos {
+  gap: 50px;
+}
+.producto {
+  font-weight: 600;
+  padding: 2px 8px;
+  border-radius: 5px;
+  margin: 5px;
+  border: 1.5px solid #b7ebff;
+}
+.cantidad {
+  border: 0px;
+}
+.linea-divisoria {
+  height: 2px;
+  width: 97%;
+  background-color: var(--electric);
+}
+.boton-comprar {
+  background-color: var(--btn-lg);
+  align-items: center;
+  padding: 15px;
+  border-radius: 12px;
+}
+.cart-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* ============  media queries  ===================================================== */
+/* (max-width: 576px) */
+@media (max-width: 1000px) {
+  .navbar-text {
+    flex-direction: column;
+    position: fixed;
+    width: 95%;
+    /* height: ; */
+    right: 0px;
+    top: 65px;
+    background-color: rgb(32, 12, 89);
+    align-items: start;
+    margin: 0 2.5%;
+    padding: 20px;
+    font-weight: 800;
+    border: 2px solid rgb(104, 151, 222);
+    border-radius: 0px 0px 1rem 1rem;
+    border-top: 0px;
+    display: none;
+  }
+  .menu-amburguesa {
+    display: flex;
+  }
+  #menu-toggle:checked + ul {
+    display: flex;
+  }
+  /* =========== main ============== */
+  .discover {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  .discover-text {
+    max-width: 80%;
+    align-items: center;
+    text-align: center;
+  }
+  .dicover-card {
+    display: none;
+  }
+  .aprender-box-cards {
+    flex-wrap: wrap;
+    margin: 20px;
+  }
+  .info-container {
+    width: 80%;
+    flex-direction: column;
+    text-align: center;
+  }
+  .imagenes {
+    flex-wrap: wrap;
+  }
+  .btc-buttons {
+    max-width: 350px;
+    flex-wrap: wrap;
+  }
+  .aprender {
+    text-align: center;
+  }
+}
+/* @media (max-width: 800px) {
+  .navbar-text {
+    display: none;
+  }
+} */

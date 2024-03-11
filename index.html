@@ -3,478 +3,324 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS III</title>
-    <link rel="stylesheet" href="/css/style.css" />
+    <title>optimizacion</title>
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- <link rel="stylesheet" href="http:/" /> -->
   </head>
   <body>
     <header>
-      <h1>Flexbox</h1>
-      <p>los hijos se ajustan segun el elemento padre</p>
+      <img src="./assets/img/m.jpg" alt="logo" class="logo" />
+
+      <nav class="navbar flex">
+        <label for="menu-toggle">
+          <img
+            src="./assets/img/menu.png"
+            alt="#"
+            class="menu-amburguesa carrito"
+          />
+          <!-- "https://via.placeholder.com/50" -->
+        </label>
+        <input type="checkbox" id="menu-toggle" />
+        <ul class="flex navbar-text">
+          <li class="home">Home</li>
+
+          <li>Descubre</li>
+
+          <li>Btc</li>
+
+          <li>Youtube</li>
+
+          <li>Contactanos</li>
+        </ul>
+        <label for="cart-toggle">
+          <img
+            src="./assets/img/car.png"
+            alt="#"
+            class="shopping-cart carrito"
+          />
+          <!-- "https://via.placeholder.com/50" -->
+        </label>
+        <input type="checkbox" id="cart-toggle" />
+        <div class="carrito-card">
+          <h1>Tus BITCOINS</h1>
+          <div class="compras-del-carrito">
+            <div class="carrito-texto-del-carrito">
+              <img src="./assets/img/menu.png" alt="" class="logo" />
+              <div class="texto-carrito">
+                <p>current bit</p>
+                <p>4.8 ETH</p>
+              </div>
+              <div class="carrito-cantidad-productos">
+                <span class="producto">+</span>
+                <span class="producto cantidad">1</span>
+                <span class="producto">-</span>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="divisor"></div> -->
+          <div class="linea-divisoria"></div>
+          <div class="cart-total">
+            <h2>total</h2>
+            <p>4.8</p>
+          </div>
+          <div class="boton-comprar">comprar</div>
+        </div>
+        <!-- <img src="./assets/img/car.png" alt="carrito" class="carrito" /> -->
+      </nav>
     </header>
-    <main>
-      <div class="separador"></div>
-      <section>
-        <h2>propiedades del Flexbox</h2>
-        <p>
-          <strong>Flex direction:row;</strong> Esta propiedad nos va permitir
-          especificar si queremos que los flex items se dispongan en filas o
-          columnas
-          <br />
-          <strong>flex direction: column;</strong> con el valor comlumn los flex
-          items se apilan en una columna de arriba hacia abajo
-        </p>
-        <div class="container-img">
-          <img src="/img/flex.png" alt="flex.png" />
+    <main class="flex">
+      <section class="discover">
+        <div class="discover-text flex">
+          <h1>Descubre la nueva era cripto</h1>
+          <p class="discover-parrafo">
+            El primer Bitcoin fue minado el 3 de enero de 2009 por alguien
+            conocido como "Satoshi Nakamoto". Hoy en día, Satoshi Nakamoto es
+            reconocido como el alias de la persona o grupo de personas que
+            crearon Bitcoin, una figura o figuras invisibles cuya creación
+            tecnológica ha influido en el mundo. compre
+            <span class="BITCOINS">BITCOINS</span> y s ea parte del futuro
+          </p>
+          <a class="send">send</a>
         </div>
-        <p>
-          <strong>flex wrap</strong> el comportamiento inicial del contenedor
-          flexible es poder <b>mantener</b> los flex items en su eje sin
-          importar que las dimensiones de estos cambien.
-          <br />
-          con flex wrap vamos a poder especificar si queremos que los items
-          puedan saltar a una nueva linea si el contenedor flexible se queda sin
-          espacio
-        </p>
-        <div class="container-img">
-          <img src="/img/wrap.png" alt="wrap.png" />
-        </div>
-        <p>
-          <strong>justigy-contend :</strong> se utiliza para centrar o colocar
-          tanto izquierda como a la derecha el contenido
-        </p>
-        <div class="container-img">
-          <img src="/img/justyfi.png" alt="justyfi" srcset="" />
-        </div>
-        <p>
-          el justify tambien tiene otra caracteristica que es el espaciado que
-          permite darle diferentes formas a la estructura
-        </p>
-        <div class="container-img">
-          <img src="/img/content.png" alt="" />
-        </div>
-      </section>
-      <div class="separador"></div>
-
-      <section>
-        <h2>Flex direction</h2>
-        <p>row esta por defecto siempre activado</p>
-        <div class="container row">
-          <div class="caja-flex">
-            <p>1</p>
-          </div>
-          <div class="caja-flex">
-            <p>2</p>
-          </div>
-          <div class="caja-flex">
-            <p>3</p>
-          </div>
-        </div>
-        <p>row-reverse</p>
-        <div class="container reverse">
-          <div class="caja-flex">
-            <p>1</p>
-          </div>
-          <div class="caja-flex">
-            <p>2</p>
-          </div>
-          <div class="caja-flex">
-            <p>3</p>
-          </div>
-        </div>
-        <p>column</p>
-        <div class="container column">
-          <div class="caja-flex">
-            <p>1</p>
-          </div>
-          <div class="caja-flex">
-            <p>2</p>
-          </div>
-          <div class="caja-flex">
-            <p>3</p>
-          </div>
-        </div>
-        <p>column-reverse</p>
-        <div class="container column-reverse">
-          <div class="caja-flex">
-            <p>1</p>
-          </div>
-          <div class="caja-flex">
-            <p>2</p>
-          </div>
-          <div class="caja-flex">
-            <p>3</p>
+        <!-- targeta discover -->
+        <div class="dicover-card">
+          <img src="./assets/img/bit.jpg" alt="Bitcoin" class="Bitcoin" />
+          <div class="dicover-text-card flex">
+            <div class="dicover-card-top flex">
+              <h3 class="over">"the greatest od all time"</h3>
+              <a class="send">10</a>
+            </div>
+            <div class="dicover-card-body flex">
+              <div class="dicover-card-right flex">
+                <img src="	https://via.placeholder.com/50" alt="" />
+                <div class="dicover-card-right-text">
+                  <p class="parrafo_small">creador</p>
+                  <h3 class="title-h3">carl rexach</h3>
+                </div>
+              </div>
+              <div class="discover-card-left">
+                <p class="parrafo_small">value</p>
+                <h3>16 ETH</h3>
+              </div>
+            </div>
           </div>
         </div>
       </section>
-      <div class="separador"></div>
-      <section>
-        <h2>Flex gap ✨</h2>
-        <p>
-          gap: con esta funcion super util colocamos el mismo espacio para
-          separar cada caja entre si se debe colocar al elemento padre
-        </p>
-        <div class="container gap">
-          <div class="caja-flex">
-            <p>1</p>
+      <section class="aprender flex">
+        <h2>crea aprende y comparte los NFTs</h2>
+        <div class="aprender-box-cards flex">
+          <div class="aprender-cards flex">
+            <img src="./assets/img/shibu.jpg" alt="" class="dogue" />
+            <h3 class="aprender-cards-title">configura tu wallet</h3>
+            <p class="parrafo_small">
+              una vez que haya configurado la billetera de su eleccion conectela
+              a opensea
+            </p>
           </div>
-          <div class="caja-flex">
-            <p>2</p>
+          <div class="aprender-cards flex">
+            <img src="./assets/img/shibu.jpg" alt="" class="dogue" />
+            <h3 class="aprender-cards-title">configura tu wallet</h3>
+            <p class="parrafo_small">
+              una vez que haya configurado la billetera de su eleccion conectela
+              a opensea
+            </p>
           </div>
-          <div class="caja-flex">
-            <p>3</p>
-          </div>
-        </div>
-      </section>
-      <div class="separador"></div>
-      <section>
-        <h2>Flex wrap</h2>
-        <p>
-          wrap:se adapta al tamaño de caja que va teniendo si achico mas el
-          contenedor se va posicionar cada cuadradito uno abajo del otro
-        </p>
-        <div class="container wrap">
-          <div class="caja-flex">
-            <p>1</p>
-          </div>
-          <div class="caja-flex">
-            <p>2</p>
-          </div>
-          <div class="caja-flex">
-            <p>3</p>
-          </div>
-          <div class="caja-flex">
-            <p>3</p>
-          </div>
-          <div class="caja-flex">
-            <p>3</p>
-          </div>
-        </div>
-        <p>no-wrap</p>
-        <p>
-          se va haciendo mas y mas pequeña cada caja y adaptando a ese pequelo
-          espacio que le quedo
-        </p>
-        <div class="container no-wrap">
-          <div class="caja-flex">
-            <p>1</p>
-          </div>
-          <div class="caja-flex">
-            <p>2</p>
-          </div>
-          <div class="caja-flex">
-            <p>3</p>
+          <div class="aprender-cards flex">
+            <img src="./assets/img/shibu.jpg" alt="" class="dogue" />
+            <h3 class="aprender-cards-title">configura tu wallet</h3>
+            <p class="parrafo_small">
+              una vez que haya configurado la billetera de su eleccion conectela
+              a opensea
+            </p>
           </div>
         </div>
       </section>
-      <div class="separador"></div>
-      <section>
-        <h2>flex flow</h2>
-        <p>te ahorras de escribir 2 lineas la flex-direction y la flex-wrap</p>
-        <div class="container flow">
-          <div class="caja-flex">
-            <p>1</p>
+      <section class="info flex">
+        <div class="info-container">
+          <h3 class="info-container-title">
+            descubre una nueva era de collecciones
+          </h3>
+          <div class="info-text-top">
+            <div class="text-container-info">
+              <p>
+                tendras la oportunidad de nfts sobre distintos topicos y de este
+                modo acceder a berneficios exclusivos por tomar parte de dicho
+                clup: ej "team stars wars"
+              </p>
+              <a href="#" class="empezamos-ahora">empezamos ahora</a>
+            </div>
           </div>
-          <div class="caja-flex">
-            <p>2</p>
-          </div>
-          <div class="caja-flex">
-            <p>3</p>
-          </div>
+        </div>
+        <div class="imagenes flex">
+          <img src="./assets/img/ete.jpg" alt="ete" class="ete" />
+          <img src="./assets/img/ete.jpg" alt="ete" class="ete" />
+          <img src="./assets/img/ete.jpg" alt="ete" class="ete" />
         </div>
       </section>
-      <div class="separador"></div>
-      <section>
-        <h2>justify contend</h2>
-        <p>esto se utiliza para acomodar el texto a donde queremos</p>
-        <p>flex-start: este es el comportamiento por defecto del contenido</p>
-        <div class="container jc-stark">
-          <div class="caja-flex">
-            <p>1</p>
-          </div>
-          <div class="caja-flex">
-            <p>2</p>
-          </div>
-          <div class="caja-flex">
-            <p>3</p>
-          </div>
-        </div>
-        <p>flex-end: acomoda el texto al final</p>
-        <div class="container flex-end">
-          <div class="caja-flex">
-            <p>1</p>
-          </div>
-          <div class="caja-flex">
-            <p>2</p>
-          </div>
-          <div class="caja-flex">
-            <p>3</p>
-          </div>
-        </div>
-        <p>flex-center: centra el texto</p>
-        <div class="container center">
-          <div class="caja-flex">
-            <p>1</p>
-          </div>
-          <div class="caja-flex">
-            <p>2</p>
-          </div>
-          <div class="caja-flex">
-            <p>3</p>
-          </div>
-        </div>
-        <p>space between:</p>
-        <div class="container between">
-          <div class="caja-flex">
-            <p>1</p>
-          </div>
-          <div class="caja-flex">
-            <p>2</p>
-          </div>
-          <div class="caja-flex">
-            <p>3</p>
-          </div>
-        </div>
-        <div class="container between">
-          <div class="caja-flex">
-            <p>1</p>
-          </div>
-          <div class="caja-flex">
-            <p>3</p>
-          </div>
-        </div>
-        <p>space around:</p>
-        <div class="container around">
-          <div class="caja-flex">
-            <p>1</p>
-          </div>
-          <div class="caja-flex">
-            <p>2</p>
-          </div>
-          <div class="caja-flex">
-            <p>3</p>
-          </div>
-        </div>
-        <p>space evenly:</p>
-        <div class="container evenly">
-          <div class="caja-flex">
-            <p>1</p>
-          </div>
-          <div class="caja-flex">
-            <p>2</p>
-          </div>
-          <div class="caja-flex">
-            <p>3</p>
-          </div>
-        </div>
-      </section>
-      <div class="separador"></div>
-      <section>
-        <h2>align-itenms</h2>
-        <p>align-content trabaja en el eje y</p>
-        <p>flex start: este es el comportamiento por defecto</p>
-        <div class="column-container start">
-          <div class="caja-flex">
-            <p>1</p>
-          </div>
-          <div class="caja-flex">
-            <p>2</p>
-          </div>
-          <div class="caja-flex">
-            <p>3</p>
-          </div>
-        </div>
-        <p>flex-end: coloca el elemento al final del eje y</p>
-        <div class="column-container end">
-          <div class="caja-flex">
-            <p>1</p>
-          </div>
-          <div class="caja-flex">
-            <p>2</p>
-          </div>
-          <div class="caja-flex">
-            <p>3</p>
-          </div>
-        </div>
-        <p>center: coloca el elemento en el centro del eje y</p>
-        <div class="column-container center-alig">
-          <div class="caja-flex">
-            <p>1</p>
-          </div>
-          <div class="caja-flex">
-            <p>2</p>
-          </div>
-          <div class="caja-flex">
-            <p>3</p>
-          </div>
-        </div>
-        <p>stretch:</p>
-        <div class="column-container-stretch align-stretch">
-          <div class="caja-flex-nueva">
-            <p>1</p>
-          </div>
-          <div class="caja-flex-nueva">
-            <p>2</p>
-          </div>
-          <div class="caja-flex-nueva">
-            <p>3</p>
-          </div>
-        </div>
-        <p>baseline:</p>
-        <div class="column-container align-baseline">
-          <div class="caja-flex-baseline baseline-1">
-            <p>1</p>
-          </div>
-          <div class="caja-flex-baseline baseline-2">
-            <p>2</p>
-          </div>
-          <div class="caja-flex-baseline baseline-3">
-            <p>3</p>
-          </div>
-        </div>
-      </section>
-      <div class="separador"></div>
-      <section>
-        <h2>align-content</h2>
-        <p>flex-start:</p>
-        <div class="ac-container ac-stark">
-          <div class="caja-flex">
-            <p>1</p>
-          </div>
-          <div class="caja-flex">
-            <p>2</p>
-          </div>
-          <div class="caja-flex">
-            <p>3</p>
-          </div>
-        </div>
-        <p>flex-end:</p>
-        <div class="ac-container ac-end">
-          <div class="caja-flex">
-            <p>1</p>
-          </div>
-          <div class="caja-flex">
-            <p>2</p>
-          </div>
-          <div class="caja-flex">
-            <p>3</p>
-          </div>
-        </div>
-
-        <p>flex-center:</p>
-        <div class="ac-container ac-center">
-          <div class="caja-flex">
-            <p>1</p>
-          </div>
-          <div class="caja-flex">
-            <p>2</p>
-          </div>
-          <div class="caja-flex">
-            <p>3</p>
-          </div>
-        </div>
-        <p>flex-between:</p>
-        <div class="ac-container ac-between">
-          <div class="caja-flex">
-            <p>1</p>
-          </div>
-          <div class="caja-flex">
-            <p>2</p>
-          </div>
-          <div class="caja-flex">
-            <p>3</p>
-          </div>
-        </div>
-
-        <p>flex-around:</p>
-        <div class="ac-container ac-around">
-          <div class="caja-flex">
-            <p>1</p>
-          </div>
-          <div class="caja-flex">
-            <p>2</p>
-          </div>
-          <div class="caja-flex">
-            <p>3</p>
-          </div>
-        </div>
-
-        <p>flex-stretch:</p>
-        <div class="ac-container ac-stretch">
-          <div class="caja-flex caja-stretch">
-            <p>1</p>
-          </div>
-          <div class="caja-flex caja-stretch">
-            <p>2</p>
-          </div>
-          <div class="caja-flex caja-stretch">
-            <p>3</p>
-          </div>
-        </div>
-      </section>
-      <div class="separador"></div>
-      <section>
-        <h2>propiedades para los hijos</h2>
-        <p>order</p>
-        <div class="container flex">
-          <div class="caja-flex order1">
-            <p>1</p>
-          </div>
-          <div class="caja-flex order2">
-            <p>2</p>
-          </div>
-          <div class="caja-flex order3">
-            <p>3</p>
-          </div>
-        </div>
-        <p>flex grow</p>
-        <div class="container flex">
-          <div class="caja-flex grow1">
-            <p>1</p>
-          </div>
-          <div class="caja-flex grow2">
-            <p>2</p>
-          </div>
-          <div class="caja-flex grow3">
-            <p>3</p>
-          </div>
-        </div>
-        <p>flex shrink</p>
-        <div class="container flex contenedor-shrink">
-          <div class="caja-flex shrink-1">
-            <p>1</p>
-          </div>
-          <div class="caja-flex shrink-2">
-            <p>2</p>
-          </div>
-          <div class="caja-flex shrink-3">
-            <p>3</p>
-          </div>
-        </div>
-        <p>flex basis : sirve para darle el tamaño desde el hijo</p>
-        <div class="container flex">
-          <div class="caja-flex basis1">
-            <p>1</p>
-          </div>
-          <div class="caja-flex basis2">
-            <p>2</p>
-          </div>
-          <div class="caja-flex basis3">
-            <p>3</p>
-          </div>
-        </div>
-        <p>flex basis : sirve para darle el tamaño desde el hijo</p>
-        <div class="container flex self">
-          <div class="caja-flex self-1">
-            <p>1</p>
-          </div>
-          <div class="caja-flex self-2">
-            <p>2</p>
-          </div>
-          <div class="caja-flex self-3">
-            <p>3</p>
-          </div>
+      <section class="btc flex">
+        <div class="btc-top">
+          <h3 class="ttitle-nft">HOT NFTs</h3>
+          <div class="btc-buttons flex">
+            <button class="btc-btn">todos</button>
+            <button class="btc-btn">Futbol</button>
+            <button class="btc-btn">musica</button>
+            <button class="btc-btn">Autos</button>
+            <button class="btc-btn">Peliculas</button>
+          </div>
+          <div class="container-cards">
+            <div class="btc-cards">
+              <div class="btc-card">
+                <img src="./assets/img/ete.jpg" alt="ete" class="ete" />
+                <div class="btc-card-top">
+                  <h3>michi</h3>
+                  <p class="gris">programacion</p>
+                </div>
+                <div class="btc-card-center flex">
+                  <div class="btc-card-center-left flex">
+                    <img src="	https://via.placeholder.com/20" alt="" />
+                    <p class="gris">michi peque</p>
+                  </div>
+                  <span>6.89eth</span>
+                </div>
+                <div class="btc-card-button flex">
+                  <div class="btc-card-center-left flex">
+                    <img src="	https://via.placeholder.com/20" alt="" />
+                    <p>05:12:07</p>
+                  </div>
+                  <button class="btc-btn">add</button>
+                </div>
+              </div>
+            </div>
+            <div class="btc-cards">
+              <div class="btc-card">
+                <img src="./assets/img/ete.jpg" alt="ete" class="ete" />
+                <div class="btc-card-top">
+                  <h3>michi</h3>
+                  <p class="gris">programacion</p>
+                </div>
+                <div class="btc-card-center flex">
+                  <div class="btc-card-center-left flex">
+                    <img src="	https://via.placeholder.com/20" alt="" />
+                    <p class="gris">michi peque</p>
+                  </div>
+                  <span>6.89eth</span>
+                </div>
+                <div class="btc-card-button flex">
+                  <div class="btc-card-center-left flex">
+                    <img src="	https://via.placeholder.com/20" alt="" />
+                    <p>05:12:07</p>
+                  </div>
+                  <button class="btc-btn">add</button>
+                </div>
+              </div>
+            </div>
+            <div class="btc-cards">
+              <div class="btc-card">
+                <img src="./assets/img/ete.jpg" alt="ete" class="ete" />
+                <div class="btc-card-top">
+                  <h3>michi</h3>
+                  <p class="gris">programacion</p>
+                </div>
+                <div class="btc-card-center flex">
+                  <div class="btc-card-center-left flex">
+                    <img src="	https://via.placeholder.com/20" alt="" />
+                    <p class="gris">michi peque</p>
+                  </div>
+                  <span>6.89eth</span>
+                </div>
+                <div class="btc-card-button flex">
+                  <div class="btc-card-center-left flex">
+                    <img src="	https://via.placeholder.com/20" alt="" />
+                    <p>05:12:07</p>
+                  </div>
+                  <button class="btc-btn">add</button>
+                </div>
+              </div>
+            </div>
+            <div class="btc-cards">
+              <div class="btc-card">
+                <img src="./assets/img/ete.jpg" alt="ete" class="ete" />
+                <div class="btc-card-top">
+                  <h3>michi</h3>
+                  <p class="gris">programacion</p>
+                </div>
+                <div class="btc-card-center flex">
+                  <div class="btc-card-center-left flex">
+                    <img src="	https://via.placeholder.com/20" alt="" />
+                    <p class="gris">michi peque</p>
+                  </div>
+                  <span>6.89eth</span>
+                </div>
+                <div class="btc-card-button flex">
+                  <div class="btc-card-center-left flex">
+                    <img src="	https://via.placeholder.com/20" alt="" />
+                    <p>05:12:07</p>
+                  </div>
+                  <button class="btc-btn">add</button>
+                </div>
+              </div>
+            </div>
+            <div class="btc-cards">
+              <div class="btc-card">
+                <img src="./assets/img/ete.jpg" alt="ete" class="ete" />
+                <div class="btc-card-top">
+                  <h3>michi</h3>
+                  <p class="gris">programacion</p>
+                </div>
+                <div class="btc-card-center flex">
+                  <div class="btc-card-center-left flex">
+                    <img src="	https://via.placeholder.com/20" alt="" />
+                    <p class="gris">michi peque</p>
+                  </div>
+                  <span>6.89eth</span>
+                </div>
+                <div class="btc-card-button flex">
+                  <div class="btc-card-center-left flex">
+                    <img src="	https://via.placeholder.com/20" alt="" />
+                    <p>05:12:07</p>
+                  </div>
+                  <button class="btc-btn">add</button>
+                </div>
+              </div>
+            </div>
+            <div class="btc-cards">
+              <div class="btc-card">
+                <img src="./assets/img/ete.jpg" alt="ete" class="ete" />
+                <div class="btc-card-top">
+                  <h3>michi</h3>
+                  <p class="gris">programacion</p>
+                </div>
+                <div class="btc-card-center flex">
+                  <div class="btc-card-center-left flex">
+                    <img src="	https://via.placeholder.com/20" alt="" />
+                    <p class="gris">michi peque</p>
+                  </div>
+                  <span>6.89eth</span>
+                </div>
+                <div class="btc-card-button flex">
+                  <div class="btc-card-center-left flex">
+                    <img src="	https://via.placeholder.com/20" alt="" />
+                    <p>05:12:07</p>
+                  </div>
+                  <button class="btc-btn">add</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="vermas">ver mas</button>
         </div>
       </section>
     </main>
+    <footer class="flex">
+      <nav>
+        <ul class="navbar-footer flex">
+          <li>teminos de u so</li>
+          <li>trabaja con no so tros</li>
+          <li>soporte</li>
+        </ul>
+      </nav>
+      <p class="navbar-footer">hecho por mi</p>
+    </footer>
   </body>
 </html>
